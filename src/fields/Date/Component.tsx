@@ -127,7 +127,7 @@ const DateComponent: React.FC<Props> = ({
                 overrides={{ id: `field-${path.replace(/\./g, '__')}`, locale: undefined }}
               />
             </div>
-            <div className="timezoneField">
+{/*             <div className="timezoneField">
               <div>
                 <Label
                   htmlFor={`field-${timezonePath.replaceAll('.', '-')}`}
@@ -146,7 +146,7 @@ const DateComponent: React.FC<Props> = ({
                 // @ts-expect-error
                 options={timezoneFieldProps.options}
               />
-            </div>
+            </div> */}
           </div>
           {Array.isArray(afterInput) && afterInput.map((Component, i) => <Component key={i} />)}
         </div>
